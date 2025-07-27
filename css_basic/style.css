@@ -4,6 +4,20 @@ body{
 
 }
 
+ul{
+    display: flex;
+    flex-direction: row ;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+}
+
+.logo{
+    height: 20px;
+}
+
 main{
     display: flex;
     flex-direction: row;
@@ -15,6 +29,7 @@ article{
     flex: 2;
     background-color: blanchedalmond;
     overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 aside{
@@ -28,6 +43,7 @@ footer, header {
     background-color: black;
     color: aliceblue;
     text-align: center;
+    width: 100%;
 }
 
 
