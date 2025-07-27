@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+}
+
+article{
+    flex: 3;
+    background-color: blanchedalmond;
+}
+
+aside{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+
+footer, header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
