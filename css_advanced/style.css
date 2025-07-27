@@ -8,7 +8,7 @@
 .hero-section{
     display: flex;
     flex-direction: column;
-    background-image: url("../images/Object.png");
+    background-image: url("images/Object.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ li a{
   transform: translate(-50%, -50%);
   width: 50px;  /* Play icon size */
   height: 50px;
-  background-image: url('../images/play.png');
+  background-image: url('images/play.png');
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none; /* Let clicks pass through */
