@@ -1,22 +1,23 @@
+/* Global Styles */
 *{
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
 
-.main_banner{
+/* Hero Section */
+.hero-section{
     display: flex;
     flex-direction: column;
     background-image: url("../images/Object.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 110vh;
+    height: 110vh;  /* Full viewport height plus */
 }
 
+/* Header and Navigation */
 header{
-
     padding: 20px 100px;
-
 }
 header nav{
     display: flex;
@@ -24,23 +25,18 @@ header nav{
     flex-direction: row;
     align-items: center;
 }
-
 nav img{
     width: 170px;
     height: 30px;
 }
- 
 nav ul {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 50px;  /* Spacing between nav items */
 }
-
 ul li{
-    list-style: none;
+    list-style: none;  /* Remove bullets */
 }
-
-
 li a{
     text-decoration: none;
     color: white;
@@ -48,35 +44,31 @@ li a{
     align-items: center;
 }
 
-
+/* Banner Text Content */
 .banner{
     display: flex;
     flex-direction: column;
 }
-
 .main_text{
     flex: 3;
     padding: 50px 20px;
     align-items: center;
     text-align: center;
 }
-
 .main_text h1{
     font-size: 100px;
     color: white;
     padding: 0;
     margin: 0;
 }
-
 .main_text .sub_text{
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     gap: 80px;
-    padding: -200px;
+    padding: -200px; /* Unusual negative padding */
 }
-
 .main_text button{
     width: 162px;
     height: 44px;
@@ -84,16 +76,16 @@ li a{
     border: none;
     border-radius: 20px;
     margin: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
+/* Team Section */
 .our_team{
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .our_team .members{
     display: flex;
     flex-direction: row;
@@ -101,19 +93,16 @@ li a{
     gap: 30px;
     padding: 30px;
 }
-
- .avatar{
+.avatar{
     margin: 5px auto;
     width: 120px;
     height: 120px;
-    border-radius: 100%;
-    object-fit: cover;
+    border-radius: 100%; /* Circle shape */
+    object-fit: cover;   /* Crop image nicely */
 }
-
 .members div{
     display: flex;
     flex-direction: column;
- 
     width: 150px;
     padding: 20px;
     justify-content: center;
@@ -122,31 +111,27 @@ li a{
     text-align: center;
     color: white;
 }
-
 .members h3{
     margin: 0;
     font-size: 15px;
     width: 150px;
 }
-
 .members p{
     margin: 2px;
     font-size: 12px;
     font-style: italic;
 }
 
-.part_testimonial{
+/* Testimonial Section */
+.testimonial{
     color: white;
     background-color: #C271FF;
-
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 70px 20px;
-    
 }
-
-.part_testimonial .outer{
+.testimonial .outer{
     display: flex;
     flex-direction: row;
     max-width: 850px;
@@ -154,105 +139,96 @@ li a{
     gap: 30px;
     width: 100%;
 }
-
-.part_testimonial .text{
+.testimonial .text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 25px;
 }
-
-.part_testimonial .text blockquote {
+.testimonial .text blockquote {
     font-style: italic;
     margin: 0;
 }
-
-.part_testimonial .text h3 {
+.testimonial .text h3 {
     margin: 10px 0 0 0;
     font-size: 18px;
 }
-
-.part_testimonial .text p {
+.testimonial .text p {
     font-size: 14px;
     margin-top: 5px;
     text-transform: capitalize;
 }
 
+/* Tutorials Section */
 .tutorials {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    margin: 10px auto 50px auto;  /* center horizontally */
+    margin: 10px auto 50px auto;  /* Center horizontally */
     align-content: center;
     text-align: center;
     padding: 50px 0;
 }
-
 .tutorials h2 {
     margin: 30px;
     font-size: 30px;
     color: #000000;
     font-weight: 300;
 }
-
 .tutorials .videos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: 1fr;               /* 1 row */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    grid-template-rows: 1fr;
     gap: 20px;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;                       /* center container */
+    margin: 0 auto; /* Center grid container */
     text-align: left;
-    align-items: start;                   /* align items at top */
+    align-items: start; /* Align items to top */
 }
-
 .tutorial_vid {
     display: flex;
     flex-direction: column;
     color: black;
-    /* width can be removed or max-width set since grid controls sizing */
-    max-width: 250px;
+    max-width: 250px;  /* Card max width */
 }
 
+/* Image wrapper for play icon overlay */
 .img-wrapper {
   position: relative;
-  display: inline-block; /* shrink to image size */
+  display: inline-block; /* Shrink to image size */
 }
-
 .img-wrapper img {
   display: block;
-  width: 100%;  /* or fixed width */
+  width: 100%;
   height: auto;
 }
-
 .play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;  /* size of play icon */
+  width: 50px;  /* Play icon size */
   height: 50px;
   background-image: url('../images/play.png');
   background-size: contain;
   background-repeat: no-repeat;
-  pointer-events: none;  /* so clicks go through */
+  pointer-events: none; /* Let clicks pass through */
   cursor: pointer;
 }
-   
+
+/* Tutorial description row */
 .tutorial_vid .desc {
     display: flex;
     flex-direction: row;
     align-items: center; /* Vertically center avatar and name */
 }
-
 .tutorial_vid h3,
 .tutorial_vid p {
     color: #071629;
     margin: 5px;
     font-size: 15px;
 }
-
 .desc h4 {
     color: #C271FF;
     margin: 0;
@@ -262,39 +238,34 @@ li a{
     justify-content: center;
     font-size: 12px;
 }
-
 .tutorial_vid .avatar {
     width: 40px;
     height: 40px;
     margin: 0;
 }
 
+/* Rating and duration */
 .rating-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
 }
-
 .tutorial_vid .rating-row .ratings {
     display: flex;
     gap: 5px;
     font-size: 10px;
 }
-
 .tutorial_vid .rating-row .duration {
     margin: 0;
     font-size: 14px;
     color: #C271FF;
 }
-
 .ratings .filled {
-    color: #C271FF;
+    color: #C271FF;  /* Filled star color */
 }
 
-
-
-
+/* Membership Section */
 .membership{
     background-color: #071629;
     display: flex;
@@ -305,26 +276,22 @@ li a{
     margin: 30px 0;
     padding: 50px 0;
 }
-
 .membership h2{
     margin: 50px;
     font-size: 30px;
     color: #F2F2F2;
     font-weight: 300;
 }
-
 .membership-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    grid-template-rows: 1fr;                /* 1 row */
-    gap: 20px;                             /* spacing between items */
-    max-width: 1200px;                     /* optional max width */
+    grid-template-rows: 1fr;
+    gap: 20px;
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto;                        /* center container */
+    margin: 0 auto; /* Center container */
     text-align: center;
 }
-
-
 .membership button{
     width: 162px;
     height: 44px;
@@ -336,7 +303,7 @@ li a{
     align-self: center;
 }
 
-
+/* FAQ Section */
 .faq {
     display: flex;
     flex-direction: column;
@@ -346,15 +313,12 @@ li a{
     padding: 50px 0;
     justify-content: center;
 }
-
 .faq h2{
     margin: 0;
     font-size: 50px;
     color: #000000;
     font-weight: 300;
-    
 }
-
 .faq .questions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -362,50 +326,41 @@ li a{
     max-width: 1000px;
     width: 100%;
 }
-
 .faq .questions > div {
     background: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
 }
-
-
 .faq h3 {
     margin-bottom: 10px;
     color: #000000;
 }
-
 .faq p {
     margin: 0;
     color: #404040;
 }
 
+/* Footer Section */
 footer{
-    padding: 100px 100px 0 100px ;
+    padding: 100px 100px 0 100px;
     background-color: #071629;
 }
-
 footer section{
     display: flex;
     flex-direction: column;
-
 }
-
 footer section div{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding-bottom: 50px;
-    
 }
-
 footer section div div {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
-
 footer section p{
     align-self: center;
     color: #404040;
