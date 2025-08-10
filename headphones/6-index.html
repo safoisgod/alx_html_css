@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/headphones/6-styles.css" />
+  <title>Responsive Web Design</title>
+</head>
+
+<body>
+  
+  <!-- Hero/Banner Section -->
+  <section class="hero-banner">
+    <header>
+      <!-- Hidden checkbox for mobile menu toggle -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Hamburger icon for mobile -->
+      <label for="menu-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="/headphones/images/logo_headphones.png" alt="Headphones logo" />
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="nav-links">
+        <a href="#what-we-do">What we do</a>
+        <a href="#our-results">Our results</a>
+        <a href="#contact-us">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Intro block with heading, text, and CTA button -->
+    <div class="intro">
+      <h2>Lorem, ipsum dolor sit amet lorem ipsum</h2>
+      <p>Lorem, ipsum dolor sit amet lorem ipsum dolor sit</p>
+      <br /><br />
+      <button>CALL TO ACTION</button>
+      <br /><br />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut
+        <br />
+        <span>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+        <br />
+        <span>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</span>
+        <br />
+        <span>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Section heading -->
+  <div class="heading">
+    <h1>What we do...</h1>
+  </div>
+
+  <!-- About paragraph -->
+  <div class="about_me">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      <br />
+      <span>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+      <br />
+      <span>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</span>
+      <br />
+      <span>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+    </p>
+  </div>
+
+  <!-- Icons section with SVG icons -->
+  <section class="icons-section">
+    <div class="icon sound">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_sound"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon video">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_video"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon music">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_music"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon hearing">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_hearing"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+  </section>
+
+  <!-- Second hero banner with overlayed text -->
+  <section class="hero-image">
+    <div class="hero-content">
+      <h1>Our results speak for themselves</h1>
+    </div>
+
+    <!-- Features paragraph -->
+    <div class="features">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        <br />
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        <br />
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        <br />
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <!-- Statistics with pentagon overlays -->
+    <section class="image-section">
+      <div class="image-container">
+        <div class="pentagon-shape">
+          <div class="overlay-text">
+            <span class="big-text">+2%</span><br />
+            <span class="small-text">Lorem ipsum dolor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="pentagon-shape">
+          <div class="overlay-text">
+            <span class="big-text">+2%</span><br />
+            <span class="small-text">Lorem ipsum dolor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="pentagon-shape">
+          <div class="overlay-text">
+            <span class="big-text">+2%</span><br />
+            <span class="small-text">Lorem ipsum dolor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="pentagon-shape">
+          <div class="overlay-text">
+            <span class="big-text">+2%</span><br />
+            <span class="small-text">Lorem ipsum dolor</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Contact form -->
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form group">
+        <label for="Email">Email Address</label>
+        <input type="text" id="email" name="name" required />
+      </div>
+
+      <div class="form group">
+        <label for="Message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <button class="form-submit-btn">CALL TO ACTION</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-row">
+
+        <!-- Footer logo -->
+        <img src="/headphones/images/logo_headphones.png" alt="Logo" class="footer-logo" />
+
+        <!-- Social links -->
+        <div class="footer-info">
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank">
+              <img src="/headphones/images/facebook icon.png" alt="facebook" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="/headphones/images/twitter icon.png" alt="twitter" />
+            </a>
+            <a href="https://Instagram.com" target="_blank">
+              <img src="/headphones/images/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer copyright -->
+      <div class="p">
+        <br /><br />
+        <p>&copy;headphones 2020.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

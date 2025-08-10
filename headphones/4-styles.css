@@ -1,0 +1,499 @@
+/* Reset margin, padding, and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body setup */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  position: static;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px 30px;
+  z-index: 1000;
+}
+
+/* Logo size */
+.logo img {
+  height: 30px;
+}
+
+/* Navigation links style */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* Hide menu toggle checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  z-index: 1100;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero banner styling */
+.hero-banner {
+  background-image: url("/headphones/images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro text section */
+.intro {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.intro h2 {
+  font-size: 36px;
+}
+
+.intro p {
+  font-size: 18px;
+}
+
+.intro button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff2600c9;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.intro button:hover {
+  background-color: #FF6565;
+  transform: scale(1.05);
+}
+
+/* Override body font and background */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* Headings and about me text */
+.heading {
+  text-align: center;
+  margin-top: 10%;
+  font-weight: 100;
+}
+
+.about_me {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Icons layout */
+.icons-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  text-align: center;
+}
+
+.icon svg {
+  width: 60px;
+  height: 60px;
+  fill: #FF6565;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Make html and body fill viewport */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Second hero image */
+.hero-image {
+  background-image: url("/headphones/images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay for hero image */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Ensure content overlays above background */
+.hero-banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+/* Features text */
+.features {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Image section layout */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual image container */
+.image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text overlay on images */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.overlay-text .big-text {
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+}
+
+.overlay-text .small-text {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+}
+
+/* Form container styling */
+.form-container {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  max-width: 300px;
+  margin: auto;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: #FF6565;
+}
+
+.form-submit-btn {
+  width: 60%;
+  margin-left: 70px;
+  padding: 12px 24px;
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.form-submit-btn:hover {
+  background-color: #e14e4e;
+}
+
+/* Footer styles */
+.footer-container {
+  background-color: #222;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.footer-socials {
+  margin-bottom: 10px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  right: 0;
+}
+
+/* Paragraph styling */
+p {
+  bottom: 10px;
+  text-align: center;
+  color: hwb(0 63% 36% / 0.619);
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 1;
+  }
+
+  .logo {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 0;
+    order: 3;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Hamburger toggle animation */
+  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .icons-section {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .hero-image {
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .hero-content h1 {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .features {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .image-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .overlay-text .big-text {
+    font-size: 24px;
+  }
+
+  .overlay-text .small-text {
+    font-size: 10px;
+  }
+
+  .footer-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+  }
+
+  .footer-logo {
+    width: 250px;
+    margin-right: 100px;
+  }
+
+  .footer-socials {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    right: 100px;
+    margin-right: 60px;
+  }
+
+  .footer-socials img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    right: 0;
+  }
+}

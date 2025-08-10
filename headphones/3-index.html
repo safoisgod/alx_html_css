@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/headphones/3-styles.css" />
+  <title>Responsive Web Design</title>
+</head>
+
+<body>
+  
+  <!-- Hero/Banner Section -->
+  <section class="hero-banner">
+    <header>
+      <!-- Hidden Checkbox for Toggle -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Hamburger Icon -->
+      <label for="menu-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <!-- Logo (centered on mobile) -->
+      <a href="#" class="logo">
+        <img src="/headphones/images/logo_headphones.png" alt="Headphones logo" />
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <a href="#what-we-do">What we do</a>
+        <a href="#our-results">Our results</a>
+        <a href="#contact-us">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Intro Block -->
+    <div class="intro">
+      <h2>Lorem, ipsum dolor sit amet lorem ipsum</h2>
+      <p>Lorem, ipsum dolor sit amet lorem ipsum dolor sit</p>
+      <br /><br />
+      <button>CALL TO ACTION</button>
+      <br /><br />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut
+        <br />
+        <span>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+        <br />
+        <span>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</span>
+        <br />
+        <span>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+      </p>
+    </div>
+  </section>
+
+  <div class="heading" id="what-we-do">
+      <h1>What we do...</h1>
+  </div>
+
+  <!-- Intro Paragraph -->
+  <div class="about_me">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      <br>
+      <span>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+      <br>
+      <span>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</span>
+      <br>
+      <span>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span></p>
+  </div>
+
+  <!-- Icons Section -->
+  <section class="icons-section">
+    <div class="icon sound">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_sound"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon video">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_video"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon music">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_music"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="icon hearing">
+      <svg>
+        <use xlink:href="/headphones/symbol-defs.svg#icon-ic_hearing"></use>
+      </svg>
+      <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+    </div>
+  </section>
+
+  <!-- HERO BANNER SECTION WITH OVERLAYED CONTENT -->
+  <section class="hero-image" id="our-results">
+    <div class="hero-content">
+      <h1>Our results speak for themselves</h1>
+    </div>
+
+    <div class="features">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        <br>
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        <br>
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+        <br>
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <section class="image-section">
+
+      <div class="image-container">
+        <img src="/headphones/images/pentagone.png" alt="Pentagon background" class="background-image" />
+        <div class="overlay-text">
+          <span class="big-text">+2%</span><br>
+          <span class="small-text">Lorem ipsum dolor</span>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="/headphones/images/pentagone.png" alt="Pentagon background" class="background-image" />
+        <div class="overlay-text">
+          <span class="big-text">+2%</span><br>
+          <span class="small-text">Lorem ipsum dolor</span>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="/headphones/images/pentagone.png" alt="Pentagon background" class="background-image" />
+        <div class="overlay-text">
+          <span class="big-text">+2%</span><br>
+          <span class="small-text">Lorem ipsum dolor</span>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <img src="/headphones/images/pentagone.png" alt="Pentagon background" class="background-image" />
+        <div class="overlay-text">
+          <span class="big-text">+2%</span><br>
+          <span class="small-text">Lorem ipsum dolor</span>
+        </div>
+      </div>
+
+    </section>
+  </section>
+
+  <div class="form-container" id="contact-us">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-group">
+         <label for="name">Full Name</label>
+         <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+         <label for="email">Email Address</label>
+         <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>   
+        </div>
+        
+        <button class="form-submit-btn" type="submit">CALL TO ACTION</button>
+    </form>
+  </div>
+
+</body>
+</html>
